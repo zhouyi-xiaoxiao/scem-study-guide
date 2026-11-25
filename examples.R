@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Original companion examples: SCEM Week 2 topics.
+# Original companion examples: Statistical Computing and Empirical Methods (SCEM), Week 2 topics.
 # Not an official assignment, answer sheet, or university-endorsed resource.
 # Run: Rscript examples.R
 # No packages are installed automatically. Base-R sections work without packages.

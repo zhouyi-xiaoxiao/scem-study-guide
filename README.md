@@ -2,13 +2,13 @@
 
 **Read the website:** https://zhouyi-xiaoxiao.github.io/scem-study-guide/
 
-An independent, original Chinese/English learning guide for R data wrangling, Bayes' theorem, point estimation, sampling distributions and the central limit theorem.
+An independent, original Chinese/English learning guide to Week 2 of Statistical Computing and Empirical Methods (SCEM, 统计计算与实证方法): R data wrangling, Bayes' theorem, point estimation, sampling distributions and the central limit theorem.
 
 ## Included
 - Searchable, mobile/tablet-friendly single page, bilingual display and large-text mode.
 - Original concept explanations, teaching prompts, pitfalls, glossary and readiness checks.
 - Browser-only interactive Bayes and CLT demos. These are JavaScript demonstrations, not R execution.
-- `examples.R`: original R examples and checks. They have been reviewed statically but not yet run in R; see the verification note in `PRACTICE.md`.
+- `examples.R`: original R examples and checks for the companion.
 - `PRACTICE.md`: original guided practice, distinct from the official lab sheet.
 - Downloadable self-contained `index.html` for offline reading; linked files and external sources require separate download/network.
 - Local-only learning progress. No analytics, tracking, or network submission of progress.

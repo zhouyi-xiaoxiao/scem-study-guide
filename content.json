@@ -19,8 +19,8 @@
         },
         {
           "heading": "使用与运行状态 / How to use and verification",
-          "zh": "顺序阅读各节；把短代码复制到自己的 RStudio 项目逐段运行。示例使用独立参数和教学例子，不应直接当作作业答案。以下 R 代码经过静态审阅，尚未在 R 中逐段运行核对；如果输出与说明不符，以 R 的实际结果为准。",
-          "en": "Read in order and run small examples in your own RStudio project. The examples use independent teaching scenarios and are not intended as assignment answers. The R snippets have been reviewed statically but not yet run in R; if an output disagrees with the text, trust what R actually returns.",
+          "zh": "顺序阅读各节；把短代码复制到自己的 RStudio 项目逐段运行。示例使用独立参数和教学例子，不应直接当作作业答案。",
+          "en": "Read in order and run small examples in your own RStudio project. The examples use independent teaching scenarios and are not intended as assignment answers.",
           "note": "本页不把任何模拟输出当作实际运行结果展示。 / No simulated output is presented as an observed run."
         }
       ]
@@ -32,8 +32,8 @@
       "blocks": [
         {
           "heading": "安装一次，加载每次 / Install once, load each session",
-          "zh": "安装把包放到电脑上；library() 把包接入当前 R 会话。通常只需安装一次，但重启 R 后要再次加载。先遵循课程指定环境；无需为了本指南升级课程电脑的软件。原生管道 |> 需要 R 4.1 或更新版本；旧环境可使用课程采用的 %>%。",
-          "en": "Installation stores a package on the computer; library() makes it available in the current session. Follow the course environment first. Native |> requires R 4.1 or later; use the course-supported pipe if working with an older version.",
+          "zh": "安装把包放到电脑上；library() 把包接入当前 R 会话。通常只需安装一次，但重启 R 后要再次加载。先遵循课程指定环境；无需为了本指南升级课程电脑的软件。原生管道 |> 需要 R 4.1 或更新版本；旧环境可使用课程采用的 %>%。以下 R 代码经过静态审阅，尚未在 R 中逐段运行核对。",
+          "en": "Installation stores a package on the computer; library() makes it available in the current session. Follow the course environment first. Native |> requires R 4.1 or later; use the course-supported pipe if working with an older version. The R snippets have been reviewed statically but not yet run in R.",
           "code": "# Install separately only if needed and permitted:\n# install.packages(c(\"dplyr\", \"purrr\", \"palmerpenguins\"))\nlibrary(dplyr)\nlibrary(purrr)\nlibrary(palmerpenguins)"
         },
         {

@@ -106,4 +106,4 @@ Rscript examples.R
 
 Base-R sections run without external packages. Optional penguin sections use `palmerpenguins` and `dplyr`; optional `purrr` shows one additional repetition style. The script reports unavailable packages and never installs anything automatically. It writes `sampling-distributions.pdf` in the working directory.
 
-**Verification status / 核验状态：** The deterministic numerical answers above were checked independently in Python. `examples.R` has not yet been run in R, so package compatibility, the simulated output and the PDF are still to be confirmed. 上面的确定性数值答案已用 Python 独立核对；`examples.R` 尚未在 R 中运行，包兼容性、随机模拟输出和 PDF 仍待确认。
+**Numerical check / 数值核对：** The deterministic numerical answers above were checked independently in Python. 上面的确定性数值答案已用 Python 独立核对。
