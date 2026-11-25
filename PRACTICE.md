@@ -2,7 +2,7 @@
 
 These are independently written companion exercises covering Week 2 topics, not a copy of an official worksheet or its staff-only model answers. They are not an assessed submission template. Use your course's official materials for the actual task and required object names.
 
-以下是原创练习与小型自检，不是官方题单或教师参考答案。**先预测，再运行，再解释**；能运行不等于推理正确。The accompanying [examples.R](examples.R) supplies runnable demonstrations, not full worked solutions to every extension below.
+以下是原创练习与小型自检，不是官方题单或教师参考答案。**先预测，再运行，再解释**；能运行不等于推理正确。The accompanying [examples.R](examples.R) supplies demonstrations, not full worked solutions to every extension below.
 
 ## 1. Index before you run · 先预测索引
 
@@ -106,4 +106,4 @@ Rscript examples.R
 
 Base-R sections run without external packages. Optional penguin sections use `palmerpenguins` and `dplyr`; optional `purrr` shows one additional repetition style. The script reports unavailable packages and never installs anything automatically. It writes `sampling-distributions.pdf` in the working directory.
 
-**Verification boundary / 核验边界：** These files were authored without an available local R runtime. Deterministic mathematical checks were independently checked in Python; execution of this R script, package compatibility, random simulation output and PDF appearance remain unverified until it is run in R. Assertions inside the script are checks to be executed, not evidence that execution has already passed.
+**Verification status / 核验状态：** The deterministic numerical answers above were checked independently in Python. `examples.R` has not yet been run in R, so package compatibility, the simulated output and the PDF are still to be confirmed. 上面的确定性数值答案已用 Python 独立核对；`examples.R` 尚未在 R 中运行，包兼容性、随机模拟输出和 PDF 仍待确认。

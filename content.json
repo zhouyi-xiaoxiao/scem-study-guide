@@ -19,9 +19,9 @@
         },
         {
           "heading": "使用与运行状态 / How to use and verification",
-          "zh": "顺序阅读各节；把短代码复制到自己的 RStudio 项目逐段运行。示例使用独立参数和教学例子，不应直接当作作业答案。发布时本环境没有 Rscript，以下 R 代码仅经过静态审阅，尚未在 R 中执行验证。",
-          "en": "Read in order and run small examples in your own RStudio project. The examples use independent teaching scenarios and are not intended as assignment answers. Rscript was unavailable in the authoring environment: the R snippets are statically reviewed, not execution-verified.",
-          "note": "R 运行未验证 / R execution unverified. No simulated output is presented as an observed run."
+          "zh": "顺序阅读各节；把短代码复制到自己的 RStudio 项目逐段运行。示例使用独立参数和教学例子，不应直接当作作业答案。以下 R 代码经过静态审阅，尚未在 R 中逐段运行核对；如果输出与说明不符，以 R 的实际结果为准。",
+          "en": "Read in order and run small examples in your own RStudio project. The examples use independent teaching scenarios and are not intended as assignment answers. The R snippets have been reviewed statically but not yet run in R; if an output disagrees with the text, trust what R actually returns.",
+          "note": "本页不把任何模拟输出当作实际运行结果展示。 / No simulated output is presented as an observed run."
         }
       ]
     },
@@ -194,8 +194,8 @@
         },
         {
           "heading": "均值、方差与标准差 / Mean, variance and SD",
-          "zh": "在 iid 且方差有限时，样本均值是 μ 的无偏估计。常见样本方差 s²=Σ(xi-x̄)²/(n-1)，R 的 var() 使用 n-1；它对总体方差无偏，但 sqrt(s²) 不因此自动成为总体标准差的无偏估计。方差单位是原单位的平方，标准差与数据同单位。",
-          "en": "Under iid sampling with finite variance, the sample mean is unbiased for μ. R uses the n-1 sample variance. Taking its square root gives a sample standard deviation, but unbiasedness is not preserved by nonlinear transformations. Variance and SD have different units.",
+          "zh": "在 iid 且总体均值 μ 存在时，样本均值是 μ 的无偏估计。若方差也有限，常见样本方差 s²=Σ(xi-x̄)²/(n-1)（R 的 var() 使用 n-1）是 σ² 的无偏估计，但 sqrt(s²) 不因此自动成为总体标准差的无偏估计。方差单位是原单位的平方，标准差与数据同单位。",
+          "en": "Under iid sampling, the sample mean is unbiased for μ whenever μ exists. With finite variance, the n-1 sample variance, which R uses, is unbiased for σ². Taking its square root gives a sample standard deviation, but unbiasedness is not preserved by nonlinear transformations. Variance and SD have different units.",
           "code": "x <- c(5, 7, 8, 12, 13)\nc(mean = mean(x), variance = var(x), sd = sd(x))\nsum((x - mean(x))^2) / (length(x) - 1)"
         },
         {
@@ -460,7 +460,7 @@
     {
       "en": "likelihood",
       "zh": "似然",
-      "meaning": "将观测概率视作参数的函数；此处类条件检测概率提供似然信息 / Probability of observed data viewed as a function of model parameters."
+      "meaning": "把已观测数据的概率看作参数的函数；在本页的贝叶斯例子里，灵敏度 P(+|D) 和假阳性率 P(+|非D) 是阳性结果在两种状态下的似然。 / Probability of observed data viewed as a function of model parameters; in the Bayes example, the sensitivity P(+|D) and the false-positive rate P(+|not D) are the likelihoods of a positive result."
     },
     {
       "en": "posterior",
@@ -604,7 +604,7 @@
     {
       "label": "R: Binomial distribution",
       "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Binomial.html",
-      "note": "公开官方 rbinom 参考 / Public binomial-generation reference."
+      "note": "公开官方 dbinom/rbinom 参考 / Public binomial reference."
     },
     {
       "label": "R: Uniform distribution",
@@ -635,11 +635,6 @@
       "label": "tidyr: pivot_longer",
       "url": "https://tidyr.tidyverse.org/reference/pivot_longer.html",
       "note": "公开官方文档 / Public official documentation."
-    },
-    {
-      "label": "R: Binomial distribution",
-      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Binomial.html",
-      "note": "dbinom/rbinom 的官方参考 / Official reference."
     }
   ]
 }

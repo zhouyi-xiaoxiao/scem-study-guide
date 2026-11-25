@@ -8,7 +8,7 @@ An independent, original Chinese/English learning guide for R data wrangling, Ba
 - Searchable, mobile/tablet-friendly single page, bilingual display and large-text mode.
 - Original concept explanations, teaching prompts, pitfalls, glossary and readiness checks.
 - Browser-only interactive Bayes and CLT demos. These are JavaScript demonstrations, not R execution.
-- `examples.R`: original R examples and checks. R/RStudio is not installed on the preparation machine, so these examples have not been executed there.
+- `examples.R`: original R examples and checks. They have been reviewed statically but not yet run in R; see the verification note in `PRACTICE.md`.
 - `PRACTICE.md`: original guided practice, distinct from the official lab sheet.
 - Downloadable self-contained `index.html` for offline reading; linked files and external sources require separate download/network.
 - Local-only learning progress. No analytics, tracking, or network submission of progress.
